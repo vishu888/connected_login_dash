@@ -8,7 +8,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  static const routeName = '/home';
+
   @override
   Widget build(BuildContext context) {
     SystemChrome.setPreferredOrientations([
@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
   }
 }
 class MyHomePage extends StatelessWidget {
+  static const routeName = '/dash';
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_app/main_homepage.dart';
 import 'package:provider/provider.dart';
 
 import 'signup_screen.dart';
@@ -52,7 +53,7 @@ class _LoginScreenState extends State<LoginScreen> {
           _authData['email'],
           _authData['password']
       );
-      Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
+      Navigator.of(context).pushReplacementNamed(MyHomePage.routeName);
 
     } catch (error)
     {
