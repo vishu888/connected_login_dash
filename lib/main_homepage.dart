@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import'package:flutter/services.dart';
 import 'dropdown.dart';
 import 'parking_list.dart';
+import 'package:login_app/main_package.dart';
+import 'package:login_app/main_map.dart';
+import 'package:login_app/main_rating.dart';
+import 'package:login_app/homepage_rating.dart';
 
 void main() {
   runApp(MyApp());
@@ -82,7 +86,7 @@ class MyHomePage extends StatelessWidget {
                     child: Column(
                       children: <Widget>[
                         GestureDetector(
-                            onTap: () => {
+                            onTap: () => {Navigator.push(context, MaterialPageRoute(builder:(context)=>GridWidget()),),
 
                             },
                             child : Column(
@@ -100,7 +104,7 @@ class MyHomePage extends StatelessWidget {
                     child: Column(
                       children: <Widget>[
                         GestureDetector(
-                            onTap: () => {
+                            onTap: () => {Navigator.push(context,MaterialPageRoute(builder: (context)=>HomePage()))
 
                             },
                             child : Column(
@@ -123,7 +127,7 @@ class MyHomePage extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add_location_alt_outlined,),
         backgroundColor: Colors.purple,
-        onPressed: () {
+        onPressed: () {Navigator.push(context, MaterialPageRoute(builder:(context)=>MyHomePage()),);
 
         },
       ),

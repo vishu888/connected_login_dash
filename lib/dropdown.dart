@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'parking_list.dart';
+import 'package:login_app/main_profile.dart';
+import 'package:login_app/main_register.dart';
 class NavDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -26,13 +28,14 @@ class NavDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.account_circle_outlined,color: Colors.orange,),
             title: Text('Profile', style: new TextStyle(color: Colors.orange)),
-            onTap: () => {Navigator.of(context).pop()},
+            onTap: () => {
+              Navigator.push(context, MaterialPageRoute(builder:(context)=>Profile()),)},
           ),
 
           ListTile(
             leading: Icon(Icons.add_business_outlined,color: Colors.purple,),
             title: Text('Register Vehicle', style: new TextStyle(color: Colors.purple)),
-            onTap: () => {Navigator.of(context).pop()},
+            onTap: () => {Navigator.push(context, MaterialPageRoute(builder:(context)=>Register()),)},
           ),
           ListTile(
             leading: Icon(Icons.account_tree_outlined,color: Colors.lightBlue,),
